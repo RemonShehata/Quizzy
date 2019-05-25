@@ -14,14 +14,14 @@
         <item name="android:orientation">vertical</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">24dp</item>
+        <item name="android:layout_margin">@dimen/question_section_margin</item>
     </style>
 
     <!-- Styling for questions textviews -->
     <style name="question_text_view">
         <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-light</item>
-        <item name="android:textSize">20sp</item>
-        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:textSize">@dimen/textview_text_size</item>
+        <item name="android:layout_marginBottom">@dimen/textview_margin_bottom</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
@@ -30,35 +30,35 @@
     <style name="radio_button">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:padding">8dp</item>
+        <item name="android:padding">@dimen/buttonPadding</item>
     </style>
 
     <!-- Styling for the  answers   -->
     <style name="answers">
-        <item name="android:layout_marginLeft">16dp</item>
-        <item name="android:layout_marginRight">16dp</item>
-        <item name="android:layout_marginTop">16dp</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">@dimen/answer_margin</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">@dimen/answer_margin</item>
+        <item name="android:layout_marginTop">@dimen/answer_margin</item>
+        <item name="android:textSize">@dimen/answer_textSize</item>
     </style>
 
 
     <!-- Questions Divider-->
     <style name="divider">
-        <item name="android:layout_marginLeft">48dp</item>
-        <item name="android:layout_marginRight">48dp</item>
+        <item name="android:layout_marginLeft">@dimen/divider_margin</item>
+        <item name="android:layout_marginRight">@dimen/divider_margin</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_height">@dimen/divider_header</item>
         <item name="android:background">@color/colorPrimary</item>
     </style>
 
     <!-- Submit answers button-->
     <style name="submit_answer">
-        <item name="android:textSize"></item>
+        <item name="android:textSize">@dimen/textview_text_size</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentRight">true</item>
-        <item name="android:layout_margin">8dp</item>
-        <item name="android:padding">8dp</item>
+        <item name="android:layout_margin">@dimen/button_margin</item>
+        <item name="android:padding">@dimen/buttonPadding</item>
     </style>
 
 </resources>

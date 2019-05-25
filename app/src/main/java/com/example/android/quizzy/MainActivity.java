@@ -69,7 +69,9 @@ public class MainActivity extends AppCompatActivity {
      *
      * <p>it calculate the grade for the answers as follows:
      * for each radiobutton : add 5 points for the correct answer and 0 points for the wrong answer
-     * for each checkbox : add 5 poins for every correct checked box and subtract 5 for every wrong checked box
+     * for each checkbox : add 5 poins for every answer that has the correct checkboxes checked
+     * and the incorrect checkboxes unchecked.
+     * decrementing points for wrong answers could result in negative results.
      * for the textbox answer add 5 points for the correct answer and 0 for the wrong answer </p>
      */
     public void submitAnswer(View view) {
@@ -87,20 +89,12 @@ public class MainActivity extends AppCompatActivity {
 
         //third answer
         CheckBox checkBox3a = findViewById(R.id.answer_3_A);
-        if (checkBox3a.isChecked()) {
-            grade -= 5;
-        }
         CheckBox checkBox3b = findViewById(R.id.answer_3_B);
-        if (checkBox3b.isChecked()) {
-            grade += 5;
-        }
         CheckBox checkBox3c = findViewById(R.id.answer_3_C);
-        if (checkBox3c.isChecked()) {
-            grade += 5;
-        }
         CheckBox checkBox3d = findViewById(R.id.answer_3_D);
-        if (checkBox3d.isChecked()) {
-            grade -= 5;
+
+        if (!checkBox3a.isChecked() && checkBox3b.isChecked() && checkBox3c.isChecked() && !checkBox3d.isChecked()) {
+            grade += 5;
         }
 
         //4th answer
@@ -117,21 +111,12 @@ public class MainActivity extends AppCompatActivity {
 
         //6th answer
         CheckBox checkBox6a = findViewById(R.id.checkbox_6_A);
-        if (checkBox6a.isChecked()) {
-            grade += 5;
-        }
-
         CheckBox checkBox6b = findViewById(R.id.checkbox_6_B);
-        if (checkBox6b.isChecked()) {
-            grade += 5;
-        }
         CheckBox checkBox6c = findViewById(R.id.checkbox_6_C);
-        if (checkBox6b.isChecked()) {
-            grade -= 5;
-        }
         CheckBox checkBox6d = findViewById(R.id.checkbox_6_D);
-        if (checkBox6d.isChecked()) {
-            grade -= 5;
+
+        if (checkBox6a.isChecked() && checkBox6b.isChecked() && !checkBox6b.isChecked() && !checkBox6d.isChecked()) {
+            grade += 5;
         }
 
         //7th answer
@@ -158,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
             grade += 5;
         }
 
-        String message = "Your grade is : " + grade;
+        String message = getString(R.string.answer) + grade;
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
         //reset grade back to 0
         grade = 0;
