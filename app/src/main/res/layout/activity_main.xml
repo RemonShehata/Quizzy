@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- questions rootView-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- layout for question #1 -->
+        <LinearLayout style="@style/question_root">
+
+            <TextView
+                style="@style/question_text_view"
+                android:text="@string/question_1" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/answer_1_A"
+                    style="@style/radio_button"
+                    android:text="@string/answer_1_A" />
+
+                <RadioButton
+                    android:id="@+id/answer_1_B"
+                    style="@style/radio_button"
+                    android:text="@string/answer_1_B" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+
+        <!-- layout for question #2 -->
+        <LinearLayout style="@style/question_root">
+
+            <TextView
+                style="@style/question_text_view"
+                android:text="@string/question_2" />
+
+
+            <EditText
+                android:id="@+id/answer_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint2"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords" />
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+
+        <!-- layout for question #3 -->
+        <LinearLayout style="@style/question_root">
+
+            <TextView
+                style="@style/question_text_view"
+                android:text="@string/question_3" />
+
+            <CheckBox
+                android:id="@+id/answer_3_A"
+                style="@style/radio_button"
+                android:text="@string/answer_3_A" />
+
+            <CheckBox
+                android:id="@+id/answer_3_B"
+                style="@style/radio_button"
+                android:text="@string/answer_3_B" />
+
+            <CheckBox
+                android:id="@+id/answer_3_C"
+                style="@style/radio_button"
+                android:text="@string/answer_3_C" />
+
+            <CheckBox
+                android:id="@+id/answer_3_D"
+                style="@style/radio_button"
+                android:text="@string/answer_3_D" />
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+
+        <!-- layout for question #4 -->
+        <LinearLayout
+            style="@style/question_root"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/question_text_view"
+                android:text="@string/question_4" />
+
+            <EditText
+                android:id="@+id/edit_text_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_director"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords" />
+
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <!-- layout for question #5 -->
+        <LinearLayout
+            style="@style/question_root"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/question_text_view"
+                android:text="@string/question_5" />
+
+            <EditText
+                android:id="@+id/edit_text_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_number"
+                android:imeOptions="actionDone"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <!-- layout for question #6 -->
+        <LinearLayout
+            style="@style/question_root"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/question_text_view"
+                android:text="@string/question_6" />
+
+            <CheckBox
+                android:id="@+id/checkbox_6_A"
+                style="@style/radio_button"
+                android:text="@string/answer_6_A" />
+
+            <CheckBox
+                android:id="@+id/checkbox_6_B"
+                style="@style/radio_button"
+                android:text="@string/answer_6_B" />
+
+            <CheckBox
+                android:id="@+id/checkbox_6_C"
+                style="@style/radio_button"
+                android:text="@string/answer_6_C" />
+
+            <CheckBox
+                android:id="@+id/checkbox_6_D"
+                style="@style/radio_button"
+                android:text="@string/answer_6_D" />
+
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <!-- layout for question #7 -->
+        <LinearLayout
+            style="@style/question_root"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/question_text_view"
+                android:text="@string/question_7" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_7_a"
+                    style="@style/radio_button"
+                    android:text="@string/answer_7_A" />
+
+                <RadioButton
+                    style="@style/radio_button"
+                    android:text="@string/answer_7_B" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <!-- layout for question #8 -->
+        <LinearLayout
+            style="@style/question_root"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/question_text_view"
+                android:text="@string/question_8" />
+
+            <EditText
+                android:id="@+id/edit_text8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_actor"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords" />
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <!-- layout for question #9 -->
+        <LinearLayout
+            style="@style/question_root"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/question_text_view"
+                android:text="@string/question_9" />
+
+            <EditText
+                android:id="@+id/edit_text9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_actor"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords" />
+
+        </LinearLayout>
+
+        <View style="@style/divider" />
+
+        <!-- layout for question #10 -->
+        <LinearLayout
+            style="@style/question_root"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/question_text_view"
+                android:text="@string/question_10" />
+
+            <EditText
+                android:id="@+id/edit_text10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_number"
+                android:imeOptions="actionDone"
+                android:inputType="phone" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/submit_answer"
+                android:onClick="submitAnswer"
+                android:text="@string/submit_answer" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

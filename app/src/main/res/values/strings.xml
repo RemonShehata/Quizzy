@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Quizzy</string>
+    <!-- Questions-->
+    <string name="question_1">1 - Which planet did Superman come from?</string>
+    <string name="question_2">2 - What superhero has been played by Michael Keaton, Val Kilmer, George Clooney and Christian Bale?</string>
+    <string name="question_3">3 - Which of these movies were directed by Woody Allen?</string>
+    <string name="question_4">4 - who is the director of Reservoir Dogs?</string>
+    <string name="question_5">5 - How many seasons did the TV series Friends last?</string>
+    <string name="question_6">6 - which of these movies were directed by James Cameron?</string>
+    <string name="question_7">7 - who is the director of the social network?</string>
+    <string name="question_8">8 - who played 	Captain Miller in the war movie saving the private ryan?</string>
+    <string name="question_9">9 - Who played Alfie Solomons in the TV Series Peaky Blinders?</string>
+    <string name="question_10">10 - how many seasons are there for peaky blinders so far?</string>
+
+    <!-- Answers -->
+    <string name="answer_1_A">Krypton</string>
+    <string name="answer_1_B">Kryptonite</string>
+    <string name="answer_3_A">Play it again, Sam 1972</string>
+    <string name="answer_3_B">Midnight in Paris 2011</string>
+    <string name="answer_3_C">Irrational Man 2015</string>
+    <string name="answer_3_D">Casino Royale 1967</string>
+    <string name="answer_6_A">The Terminator 1984</string>
+    <string name="answer_6_B">Avatar 2009</string>
+    <string name="answer_6_C">Terminator 3 : Genisys 2015</string>
+    <string name="answer_6_D">Terminator Salvation 2009</string>
+    <string name="answer_7_A">David Fincher</string>
+    <string name="answer_7_B">Steven Spielberg</string>
+
+    <!-- hints for edit text -->
+    <string name="hint2">super hero e.g. Superman</string>
+    <string name="hint_director">director name e.g. Christopher Nolan</string>]
+    <string name="hint_number">number e.g. 5</string>
+    <string name="hint_actor">actor name e.g. Robert de Niro</string>
+
+
+    <string name="submit_answer">Submit Answer</string>
+</resources>
