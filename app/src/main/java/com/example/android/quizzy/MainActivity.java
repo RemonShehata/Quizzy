@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
         //second answer
         EditText editText2 = findViewById(R.id.answer_2);
-        if ("Batman".equals(editText2.getText().toString())) {
+        if (getString(R.string.answer_2).equals(editText2.getText().toString())) {
             grade += 5;
         }
 
@@ -99,13 +99,13 @@ public class MainActivity extends AppCompatActivity {
 
         //4th answer
         EditText editText4 = findViewById(R.id.edit_text_4);
-        if ("Quentin Tarantino".equals(editText4.getText().toString())) {
+        if (getString(R.string.answer_4).equals(editText4.getText().toString())) {
             grade += 5;
         }
 
         //5th answer
         EditText editText5 = findViewById(R.id.edit_text_5);
-        if ("10".equals(editText5.getText().toString())) {
+        if (getString(R.string.answer_5).equals(editText5.getText().toString())) {
             grade += 5;
         }
 
@@ -127,19 +127,19 @@ public class MainActivity extends AppCompatActivity {
 
         //8th answer
         EditText editText8 = findViewById(R.id.edit_text8);
-        if ("Tom Hanks".equals(editText8.getText().toString())) {
+        if (getString(R.string.answer_8).equals(editText8.getText().toString())) {
             grade += 5;
         }
 
         //9th answer
         EditText editText9 = findViewById(R.id.edit_text9);
-        if ("Tom Hardy".equals(editText9.getText().toString())) {
+        if (getString(R.string.answer_9).equals(editText9.getText().toString())) {
             grade += 5;
         }
 
         //10th answer
         EditText editText10 = findViewById(R.id.edit_text10);
-        if ("4".equals(editText10.getText().toString())) {
+        if (getString(R.string.answer_10).equals(editText10.getText().toString())) {
             grade += 5;
         }
 

@@ -9,7 +9,7 @@
         <item name="colorButtonNormal">@color/colorAccent</item>
     </style>
 
-    <!-- Syle for layout for questions section -->
+    <!-- Style for layout for questions section -->
     <style name="question_root">
         <item name="android:orientation">vertical</item>
         <item name="android:layout_width">match_parent</item>
