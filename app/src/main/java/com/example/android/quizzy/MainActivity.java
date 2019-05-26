@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkBox6c = findViewById(R.id.checkbox_6_C);
         CheckBox checkBox6d = findViewById(R.id.checkbox_6_D);
 
-        if (checkBox6a.isChecked() && checkBox6b.isChecked() && !checkBox6b.isChecked() && !checkBox6d.isChecked()) {
+        if (checkBox6a.isChecked() && checkBox6b.isChecked() && !checkBox6c.isChecked() && !checkBox6d.isChecked()) {
             grade += 5;
         }
 
