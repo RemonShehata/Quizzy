@@ -1,4 +1,4 @@
-package com.example.android.quizzy;
+package com.example.android.quizzy.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
+
+import com.example.android.quizzy.R;
 
 /**
  * A quiz app about movies , actors and the cinema,etc..
