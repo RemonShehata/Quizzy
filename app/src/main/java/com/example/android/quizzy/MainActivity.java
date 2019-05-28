@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
             grade += 5;
         }
 
-        String message = getString(R.string.answer) + grade;
+        String message = getString(R.string.answer, grade);
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
         //reset grade back to 0
         grade = 0;

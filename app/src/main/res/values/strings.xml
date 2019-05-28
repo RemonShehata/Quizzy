@@ -42,5 +42,5 @@
 
 
     <string name="submit_answer">Submit Answer</string>
-    <string name="answer">Your grade is : <xliff:g example="10" id="grade">%s</xliff:g></string>
+    <string name="answer">Your grade is : <xliff:g example="10" id="grade">%d</xliff:g></string>
 </resources>
