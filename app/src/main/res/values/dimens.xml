@@ -11,4 +11,14 @@
     <dimen name="divider_header">2dp</dimen>
     <dimen name="button_margin">8dp</dimen>
 
+
+    <!-- cons layout dimens -->
+    <dimen name="cons_margin_8">8dp</dimen>
+    <dimen name="cons_margin_16">16dp</dimen>
+    <dimen name="cons_margin_24">24dp</dimen>
+    <dimen name="cons_margin_48">48dp</dimen>
+
+    <dimen name="cons_question_textSize">16sp</dimen>
+    <dimen name="cons_submit_answers_text_size">16sp</dimen>
+
 </resources>
