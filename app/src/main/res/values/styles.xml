@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -35,8 +35,12 @@
 
     <!-- Styling for the  answers   -->
     <style name="answers">
-        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">@dimen/answer_margin</item>
-        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">@dimen/answer_margin</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/answer_margin
+        </item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/answer_margin
+        </item>
         <item name="android:layout_marginTop">@dimen/answer_margin</item>
         <item name="android:textSize">@dimen/answer_textSize</item>
     </style>
@@ -59,6 +63,55 @@
         <item name="android:layout_alignParentRight">true</item>
         <item name="android:layout_margin">@dimen/button_margin</item>
         <item name="android:padding">@dimen/buttonPadding</item>
+    </style>
+
+
+    <!-- Styles for cons layout -->
+    <!-- Divider-->
+    <style name="cons_divider">
+        <item name="android:layout_marginStart">@dimen/cons_margin_48</item>
+        <item name="android:layout_marginEnd">@dimen/cons_margin_48</item>
+        <item name="android:layout_marginTop">@dimen/cons_margin_8</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- Styling for questions textviews -->
+    <style name="cons_question">
+        <item name="android:textSize">@dimen/cons_question_textSize</item>
+        <item name="android:layout_marginStart">@dimen/cons_margin_16</item>
+        <item name="android:layout_marginEnd">@dimen/cons_margin_16</item>
+        <item name="android:layout_marginTop">@dimen/cons_margin_16</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle"></item>
+        <item name="android:fontFamily">sans-serif-condensed-light</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- Styling for questions EditText -->
+    <style name="cons_editText">
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:ems">10</item>
+        <item name="android:importantForAutofill" tools:targetApi="o">no</item>
+    </style>
+
+    <!-- Styling for submit answers button-->
+    <style name="cons_submitAnswersButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/cons_margin_16</item>
+        <item name="android:layout_marginEnd">@dimen/cons_margin_16</item>
+        <item name="android:layout_marginTop">@dimen/cons_margin_16</item>
+        <item name="android:layout_marginBottom">@dimen/cons_margin_16</item>
+        <item name="android:fontFamily">sans-serif-condensed-medium</item>
+        <item name="android:textSize">@dimen/cons_submit_answers_text_size</item>
+
     </style>
 
 </resources>
