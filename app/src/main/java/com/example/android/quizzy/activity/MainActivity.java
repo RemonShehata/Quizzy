@@ -54,7 +54,8 @@ import com.example.android.quizzy.R;
  */
 
 public class MainActivity extends AppCompatActivity {
-    int grade = 0;
+
+    private int grade = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
