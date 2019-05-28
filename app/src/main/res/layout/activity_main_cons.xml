@@ -35,14 +35,14 @@
             app:layout_constraintTop_toBottomOf="@+id/textView">
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/answer_1_A"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/answer_1_A" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/answer_1_B"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -76,7 +76,7 @@
             app:layout_constraintTop_toBottomOf="@+id/view" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/answer_2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -103,7 +103,7 @@
             android:layout_marginRight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText2" />
+            app:layout_constraintTop_toBottomOf="@+id/answer_2" />
 
         <TextView
             android:id="@+id/textView3"
@@ -120,7 +120,7 @@
             app:layout_constraintTop_toBottomOf="@+id/view4" />
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/answer_3_A"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -131,7 +131,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         <CheckBox
-            android:id="@+id/checkBox2"
+            android:id="@+id/answer_3_B"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -139,10 +139,10 @@
             android:layout_marginTop="8dp"
             android:text="@string/answer_3_B"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+            app:layout_constraintTop_toBottomOf="@+id/answer_3_A" />
 
         <CheckBox
-            android:id="@+id/checkBox3"
+            android:id="@+id/answer_3_C"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -150,10 +150,10 @@
             android:layout_marginTop="8dp"
             android:text="@string/answer_3_C"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+            app:layout_constraintTop_toBottomOf="@+id/answer_3_B" />
 
         <CheckBox
-            android:id="@+id/checkBox4"
+            android:id="@+id/answer_3_D"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -161,7 +161,7 @@
             android:layout_marginTop="8dp"
             android:text="@string/answer_3_D"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+            app:layout_constraintTop_toBottomOf="@+id/answer_3_C" />
 
         <View
             android:id="@+id/view5"
@@ -173,7 +173,7 @@
             android:layout_marginRight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+            app:layout_constraintTop_toBottomOf="@+id/answer_3_D" />
 
         <TextView
             android:id="@+id/textView4"
@@ -190,7 +190,7 @@
             app:layout_constraintTop_toTopOf="@+id/view5" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/edit_text_4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -215,7 +215,7 @@
             android:layout_marginRight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText" />
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_4" />
 
         <TextView
             android:id="@+id/textView5"
@@ -232,7 +232,7 @@
             app:layout_constraintTop_toBottomOf="@+id/view6" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/edit_text_5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -257,7 +257,7 @@
             android:layout_marginRight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText3" />
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_5" />
 
         <TextView
             android:id="@+id/textView6"
@@ -274,7 +274,7 @@
             app:layout_constraintTop_toBottomOf="@+id/view7" />
 
         <CheckBox
-            android:id="@+id/checkBox5"
+            android:id="@+id/checkbox_6_A"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -285,17 +285,17 @@
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <CheckBox
-            android:id="@+id/checkBox6"
+            android:id="@+id/checkbox_6_B"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:text="@string/answer_6_B"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox5" />
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_6_A" />
 
         <CheckBox
-            android:id="@+id/checkBox7"
+            android:id="@+id/checkbox_6_C"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -303,10 +303,10 @@
             android:layout_marginTop="8dp"
             android:text="@string/answer_6_C"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/checkBox6" />
+            app:layout_constraintTop_toBottomOf="@id/checkbox_6_B" />
 
         <CheckBox
-            android:id="@+id/checkBox8"
+            android:id="@+id/checkbox_6_D"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -314,7 +314,7 @@
             android:layout_marginTop="8dp"
             android:text="@string/answer_6_D"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/checkBox7" />
+            app:layout_constraintTop_toBottomOf="@id/checkbox_6_C" />
 
         <View
             android:id="@+id/view8"
@@ -326,7 +326,7 @@
             android:layout_marginRight="48dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox8" />
+            app:layout_constraintTop_toBottomOf="@+id/checkbox_6_D" />
 
         <TextView
             android:id="@+id/textView7"
@@ -353,7 +353,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView7">
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/radio_7_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -397,7 +397,7 @@
             app:layout_constraintTop_toTopOf="@+id/view9" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/edit_text8"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -423,7 +423,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/editText4" />
+            app:layout_constraintTop_toBottomOf="@id/edit_text8" />
 
         <TextView
             android:id="@+id/textView9"
@@ -440,7 +440,7 @@
             app:layout_constraintTop_toBottomOf="@id/view10" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/edit_text9"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -466,7 +466,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/editText5" />
+            app:layout_constraintTop_toBottomOf="@id/edit_text9" />
 
         <TextView
             android:id="@+id/textView10"
@@ -483,7 +483,7 @@
             app:layout_constraintTop_toBottomOf="@id/view11" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/edit_text10"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -508,12 +508,13 @@
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
+            android:onClick="submitAnswer"
             android:text="@string/submit_answer"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.85"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/editText6"
+            app:layout_constraintTop_toBottomOf="@id/edit_text10"
             app:layout_constraintVertical_bias="0.85" />
 
     </android.support.constraint.ConstraintLayout>

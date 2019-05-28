@@ -2,13 +2,10 @@ package com.example.android.quizzy;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -89,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
         //third answer
         CheckBox checkBox3a = findViewById(R.id.answer_3_A);
-        CheckBox checkBox3b = findViewById(R.id.answer_3_B);
+        CheckBox checkBox3b = findViewById(R.id.answer_3_A);
         CheckBox checkBox3c = findViewById(R.id.answer_3_C);
         CheckBox checkBox3d = findViewById(R.id.answer_3_D);
 
