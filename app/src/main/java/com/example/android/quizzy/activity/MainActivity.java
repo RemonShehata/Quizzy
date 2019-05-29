@@ -1,5 +1,6 @@
 package com.example.android.quizzy.activity;
 
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +10,9 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.example.android.quizzy.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * A quiz app about movies , actors and the cinema,etc..
@@ -57,10 +61,60 @@ public class MainActivity extends AppCompatActivity {
 
     private int grade = 0;
 
+    @BindView(R.id.answer_1_A)
+    RadioButton radioButton1;
+
+    @BindView(R.id.answer_2)
+    EditText editText2;
+
+    @BindView(R.id.answer_3_A)
+    CheckBox checkBox3a;
+
+    @BindView(R.id.answer_3_B)
+    CheckBox checkBox3b;
+
+    @BindView(R.id.answer_3_C)
+    CheckBox checkBox3c;
+
+    @BindView(R.id.answer_3_D)
+    CheckBox checkBox3d;
+
+    @BindView(R.id.edit_text_4)
+    EditText editText4;
+
+    @BindView(R.id.edit_text_5)
+    EditText editText5;
+
+    @BindView(R.id.checkbox_6_A)
+    CheckBox checkBox6a;
+
+    @BindView(R.id.checkbox_6_B)
+    CheckBox checkBox6b;
+
+    @BindView(R.id.checkbox_6_C)
+    CheckBox checkBox6c;
+
+    @BindView(R.id.checkbox_6_D)
+    CheckBox checkBox6d;
+
+    @BindView(R.id.radio_7_a)
+    RadioButton radioButton7;
+
+    @BindView(R.id.edit_text8)
+    EditText editText8;
+
+    @BindView(R.id.edit_text9)
+    EditText editText9;
+
+    @BindView(R.id.edit_text10)
+    EditText editText10;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_cons);
+
+        ButterKnife.bind(this);
     }
 
     /**
@@ -76,69 +130,51 @@ public class MainActivity extends AppCompatActivity {
      */
     public void submitAnswer(View view) {
         //checks the first answer and add 5 if correct
-        RadioButton radioButton1 = findViewById(R.id.answer_1_A);
         if (radioButton1.isChecked()) {
             grade += 5;
         }
 
         //second answer
-        EditText editText2 = findViewById(R.id.answer_2);
         if (getString(R.string.answer_2).equals(editText2.getText().toString())) {
             grade += 5;
         }
 
         //third answer
-        CheckBox checkBox3a = findViewById(R.id.answer_3_A);
-        CheckBox checkBox3b = findViewById(R.id.answer_3_B);
-        CheckBox checkBox3c = findViewById(R.id.answer_3_C);
-        CheckBox checkBox3d = findViewById(R.id.answer_3_D);
-
         if (!checkBox3a.isChecked() && checkBox3b.isChecked() && checkBox3c.isChecked() && !checkBox3d.isChecked()) {
             grade += 5;
         }
 
         //4th answer
-        EditText editText4 = findViewById(R.id.edit_text_4);
         if (getString(R.string.answer_4).equals(editText4.getText().toString())) {
             grade += 5;
         }
 
         //5th answer
-        EditText editText5 = findViewById(R.id.edit_text_5);
         if (getString(R.string.answer_5).equals(editText5.getText().toString())) {
             grade += 5;
         }
 
         //6th answer
-        CheckBox checkBox6a = findViewById(R.id.checkbox_6_A);
-        CheckBox checkBox6b = findViewById(R.id.checkbox_6_B);
-        CheckBox checkBox6c = findViewById(R.id.checkbox_6_C);
-        CheckBox checkBox6d = findViewById(R.id.checkbox_6_D);
-
         if (checkBox6a.isChecked() && checkBox6b.isChecked() && !checkBox6c.isChecked() && !checkBox6d.isChecked()) {
             grade += 5;
         }
 
         //7th answer
-        RadioButton radioButton7 = findViewById(R.id.radio_7_a);
         if (radioButton7.isChecked()) {
             grade += 5;
         }
 
         //8th answer
-        EditText editText8 = findViewById(R.id.edit_text8);
         if (getString(R.string.answer_8).equals(editText8.getText().toString())) {
             grade += 5;
         }
 
         //9th answer
-        EditText editText9 = findViewById(R.id.edit_text9);
         if (getString(R.string.answer_9).equals(editText9.getText().toString())) {
             grade += 5;
         }
 
         //10th answer
-        EditText editText10 = findViewById(R.id.edit_text10);
         if (getString(R.string.answer_10).equals(editText10.getText().toString())) {
             grade += 5;
         }
